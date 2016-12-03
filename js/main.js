@@ -27,7 +27,9 @@ var startLoader = function() {
 }
 
 var stopLoader = function() {
-	clearInterval(loadingInterval);
-	clearTimeout(loadingTimeout);
-	title.innerHTML = titleOriginalContent;
+	if(loadingInterval && loadingTimeout) {	
+		clearInterval(loadingInterval);
+		clearTimeout(loadingTimeout);
+		title.innerHTML = titleOriginalContent;
+	}
 }
