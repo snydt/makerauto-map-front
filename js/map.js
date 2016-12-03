@@ -22,7 +22,7 @@ var initMap = function (lat, long, text, zoom) {
       locations[0].coordinates[0] === 0 && 
       locations[0].coordinates[1] === 0
       ) {
-      infoHTMLElement.innerHTML = 'No results found..';
+      infoHTMLElement.innerHTML = 'Nothing here..';
     }
 
     map = L
