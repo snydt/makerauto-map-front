@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Find the Maker Auto</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <a id="realTime">Latest location</a>
+    </header>
+    <form>
+      <label for="year">Year</label>
+      <select id="year" name="year" required>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+      </select>
+      <label for="month">Month</label>
+      <select id="month" name="month" required>
+        <option value="0">01</option>
+        <option value="1">02</option>
+        <option value="2">03</option>
+        <option value="3">04</option>
+        <option value="4">05</option>
+        <option value="5">06</option>
+        <option value="6">07</option >
+        <option value="7">08</option>
+        <option value="8">09</option>
+        <option value="9">10</option>
+        <option value="10">11</option>
+        <option value="11">12</option>
+      </select>
+      <button type="submit" id="search">Search</button>
+    </form>
+    <div class="clearfix"></div>
+    <h1 id="mainTitle">Latest location</h1>
+    <div id="informations"></div>
+    <div id="map"></div>
+
+
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/realtime.js"></script>
+
+    <script>
+      window.addEventListener('deviceready', function() {
+        start();
+      }, false);
+      start();
+    </script> 
+  </body>
+</html>

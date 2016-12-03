@@ -1,0 +1,143 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+body {
+	padding: 0 5%;
+	font-family: arial, 'sans-serif';
+}
+.clearfix {
+	clear: both;
+}
+
+body > header {
+	background: url('../img/logo.png') center left;
+	background-repeat: no-repeat;
+	background-size: 200px;
+	height: 8rem;
+	float: left;
+	width: 50%;
+	margin: 0 0 1.5rem 0;
+}
+body > header > a {
+	display: inline-block;
+	margin: 3rem 0 0 250px;
+	border: 1px solid #FF9933;
+	color: #ffffff;
+	background: #FF9933;
+	padding: .5rem;
+	text-decoration: none;
+	transition: all .2s;
+}
+body > header > a:hover {
+	background: none;
+	color: #FF9933;
+	cursor: pointer;
+}
+
+body > form {
+	float: left;
+	width: 50%;
+	height: 8rem;
+	line-height: 8rem;
+	text-align: right;
+}
+body > form > select {
+	position: relative;
+	border: 1px solid #FF9933;
+	background: none;
+	color: #FF9933;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	padding: .5rem;
+	outline: none;
+	margin: 0 .5rem;
+}
+body > form > select:hover {
+	cursor: pointer;
+}
+body > form > select:after {
+  content: "▼";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background: #FF9933;
+  color: black;
+}
+body > form > button {
+	background: none;
+	color: #ffffff;
+	border: 1px solid #FF9933;
+	background: #FF9933;
+	padding: .5rem;
+	margin: 0 .5rem;
+	transition: all .2s;
+}
+body > form > button:hover {
+	cursor: pointer;
+	background: none;
+	color: #FF9933;
+}
+
+body > #map {
+	clear: both;
+	height: 400px;
+	border: 4px solid #FF9933;
+}
+
+body > h1 {
+	display: inline-block;
+	color: #ffffff;
+	background: #128807;
+	padding: .5rem;
+	margin: 0 0 1rem 0;
+	max-width: 30%;
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+
+/**
+ * Responsive
+ */
+
+@media(max-width: 980px) {
+	body > header {
+		float: none;
+		width: 100%;
+		background-size: 100px;
+		height: 5rem;
+		margin: 0;
+	}
+	body > header > a {
+		margin: 2rem 0 0 150px;
+		padding: .5rem;
+	}
+
+	body > form {
+		width: 100%;
+		text-align: center;
+		height: 5rem;
+		line-height: 5rem;
+	}
+
+	body > h1 {
+		max-width: 100%;
+		font-size: 1.1rem;
+	}
+}
+
+@media(max-width: 380px) {
+	body > form {
+		font-size: .8rem;
+	}
+	body > form > select {
+		padding: .3rem;
+		margin: 0 .3rem;
+	}
+	body > form > button {
+		padding: .3rem;
+		margin: 0 .3rem;
+	}
+}
