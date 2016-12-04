@@ -3,7 +3,7 @@
 **History of the project**
 see the API maker auto map [README](https://github.com/laudeon/makerauto-map-api/blob/master/README.md)
 
-**The project is not production-ready yet. It is a prototype, it can have somespecific (non generic) parts, for example, url, magic numbers, etc.**
+**The project is not production-ready yet. It is a prototype, it can have some specific (non generic) parts, for example, url, magic numbers, etc.**
 
 ## Requirements
 
