@@ -98,6 +98,35 @@ body > h1 {
 	font-weight: 700;
 }
 
+body > footer {
+	margin-top: 3rem	;
+	color: #ffffff;
+	text-align: right;
+}
+body > footer > nav > ul > li > a {
+	color: #ffffff;
+	font-size: 1rem;
+	display: block;
+	padding: .5rem;
+	background: #FF9933;
+	text-decoration: none;
+	transition: all .2s;
+	border: 1px solid transparent;
+}
+body > footer > nav > ul > li > a:hover {
+	color: #FF9933;
+	background: none;
+	border: 1px solid #FF9933;
+}
+body > footer > nav > ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+body > footer > nav > ul > li {
+	display: inline-block;
+	margin: 0 0 0 1rem;
+}
 /**
  * Responsive
  */
